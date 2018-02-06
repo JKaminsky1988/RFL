@@ -4,31 +4,332 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>stars.css Demos</title>
-		<!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+		<title>Опрос</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
 		<link href="./sticky.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-	<div class="questionnaire">
-		<p class="questionnaire_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem atque ea ab, veritatis rerum minima.</p>
-	</div>
-		<div class="cont">
-			<div class="stars">
-				<form action="">
-					<input class="star star-5" id="star-5-2" type="radio" name="star"/>
-					<label class="star star-5" for="star-5-2"></label>
-					<input class="star star-4" id="star-4-2" type="radio" name="star"/>
-					<label class="star star-4" for="star-4-2"></label>
-					<input class="star star-3" id="star-3-2" type="radio" name="star"/>
-					<label class="star star-3" for="star-3-2"></label>
-					<input class="star star-2" id="star-2-2" type="radio" name="star"/>
-					<label class="star star-2" for="star-2-2"></label>
-					<input class="star star-1" id="star-1-2" type="radio" name="star"/>
-					<label class="star star-1" for="star-1-2"></label>
+		<div class="questionnaire-bl">
+			<div class="questionnaire_title">
+				<h1>Lorem ipsum dolor.</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem atque ea ab, veritatis rerum minima.</p>
+			</div>
+			<form action="" id="questionnaire" class="questionnaire">
+				<!-- question_1 -->
+				<div class="question question_1">
+					<h3>Какой формат книг вы обычно предпочитаете?<span>(можно выбрать несколько вариантов)</span></h3>
+					<ul class="variant-list multiple_choice">
+						<li class="variant">
+							<input class="var_1_1" id="var_1_1" name="var_1_1" type="checkbox" form="questionnaire">
+							<label class="var_1_1" for="var_1_1">Печатное издание</label>
+						</li>
+						<li class="variant">
+							<input class="var_1_2" id="var_1_2" name="var_1_2" type="checkbox" form="questionnaire">
+							<label class="var_1_2" for="var_1_2">Электронный вариант</label>
+						</li>
+						<li class="variant">
+							<input class="var_1_3" id="var_1_3" name="var_1_3" type="checkbox" form="questionnaire">
+							<label class="var_1_3" for="var_1_3">Аудиокнига</label>
+						</li>
+						<li class="variant another">
+							<label class="var_1_4" for="var_1_4"></label>
+							<textarea class="var_1_4" id="var_1_4" name="var_1_4">Другой вариант: </textarea>
+						</li>
+					</ul>
+				</div>
+
+				<!-- question_2 -->
+				<div class="question question_2">
+					<h3>Как вы узнали об этой книге?<span>(можно выбрать только один вариант)</span></h3>
+					<ul class="variant-list single_choice">
+						<li class="variant">
+							<input class="var_2" id="var_2_1" name="var_2" type="radio" form="questionnaire">
+							<label class="var_2" for="var_2_1">Случайно наткнулась на эту книгу</label>
+						</li>
+						<li class="variant">
+							<input class="var_2" id="var_2_2" name="var_2" type="radio" form="questionnaire">
+							<label class="var_2" for="var_2_2">Мне посоветовали прочесть эту книгу</label>
+						</li>
+						<li class="variant">
+							<input class="var_2" id="var_2_3" name="var_2" type="radio" form="questionnaire">
+							<label class="var_2" for="var_2_3">Я искала информацию по теме и нашла эту книгу</label>
+						</li>
+					</ul>
+				</div>
+
+				<!-- question_3 -->
+				<div class="question question_3">
+					<h3>Почему вы решили прочитать эту книгу?<span>(можно выбрать несколько вариантов)</span></h3>
+					<ul class="variant-list multiple_choice">
+						<li class="variant">
+							<input class="var_3_1" id="var_3_1" name="var_3_1" type="checkbox" form="questionnaire">
+							<label class="var_3_1" for="var_3_1">Меня привлекло название/обложка</label>
+						</li>
+						<li class="variant">
+							<input class="var_3_2" id="var_3_2" name="var_3_2" type="checkbox" form="questionnaire">
+							<label class="var_3_2" for="var_3_2">Я была в подобных отношениях</label>
+						</li>
+						<li class="variant">
+							<input class="var_3_3" id="var_3_3" name="var_3_3" type="checkbox" form="questionnaire">
+							<label class="var_3_3" for="var_3_3">Я просто люблю читать</label>
+						</li>
+						<li class="variant another">
+							<label class="var_3_4" for="var_3_4"></label>
+							<textarea class="var_3_4" id="var_3_4" name="var_3_4">Другой вариант: </textarea>
+						</li>
+					</ul>
+				</div>
+				<!-- question_4 -->
+				<div class="question question_4">
+					<h3>Каково первое впечатление от книги?<span>(оцените от 1 до 10, где 1 - самое негативное впечатление, а 10 - самое положительное впечатление)</span></h3>
+					<div class="stars">
+						<input class="star star-10" id="var_4_10" type="radio" name="star_4" form="questionnaire">
+						<label class="star star-10" for="var_4_10"></label>
+						<input class="star star-9" id="var_4_9" type="radio" name="star_4" form="questionnaire">
+						<label class="star star-9" for="var_4_9"></label>
+						<input class="star star-8" id="var_4_8" type="radio" name="star_4" form="questionnaire">
+						<label class="star star-8" for="var_4_8"></label>
+						<input class="star star-7" id="var_4_7" type="radio" name="star_4" form="questionnaire">
+						<label class="star star-7" for="var_4_7"></label>
+						<input class="star star-6" id="var_4_6" type="radio" name="star_4" form="questionnaire">
+						<label class="star star-6" for="var_4_6"></label>
+						<input class="star star-5" id="var_4_5" type="radio" name="star_4" form="questionnaire">
+						<label class="star star-5" for="var_4_5"></label>
+						<input class="star star-4" id="var_4_4" type="radio" name="star_4" form="questionnaire">
+						<label class="star star-4" for="var_4_4"></label>
+						<input class="star star-3" id="var_4_3" type="radio" name="star_4" form="questionnaire">
+						<label class="star star-3" for="var_4_3"></label>
+						<input class="star star-2" id="var_4_2" type="radio" name="star_4" form="questionnaire">
+						<label class="star star-2" for="var_4_2"></label>
+						<input class="star star-1" id="var_4_1" type="radio" name="star_4" form="questionnaire">
+						<label class="star star-1" for="var_4_1"></label>
+					</div>
+
+					<!-- question_5 -->
+					<div class="question question_5">
+						<h3>Интересно ли читать?<span>(оцените от 1 до 10, где 1 - вообще неинтересно, а 10 - очень интересно)</span></h3>
+						<div class="stars">
+							<input class="star star-10" id="var_5_10" type="radio" name="star_5" form="questionnaire">
+							<label class="star star-10" for="var_5_10"></label>
+							<input class="star star-9" id="var_5_9" type="radio" name="star_5" form="questionnaire">
+							<label class="star star-9" for="var_5_9"></label>
+							<input class="star star-8" id="var_5_8" type="radio" name="star_5" form="questionnaire">
+							<label class="star star-8" for="var_5_8"></label>
+							<input class="star star-7" id="var_5_7" type="radio" name="star_5" form="questionnaire">
+							<label class="star star-7" for="var_5_7"></label>
+							<input class="star star-6" id="var_5_6" type="radio" name="star_5" form="questionnaire">
+							<label class="star star-6" for="var_5_6"></label>
+							<input class="star star-5" id="var_5_5" type="radio" name="star_5" form="questionnaire">
+							<label class="star star-5" for="var_5_5"></label>
+							<input class="star star-4" id="var_5_4" type="radio" name="star_5" form="questionnaire">
+							<label class="star star-4" for="var_5_4"></label>
+							<input class="star star-3" id="var_5_3" type="radio" name="star_5" form="questionnaire">
+							<label class="star star-3" for="var_5_3"></label>
+							<input class="star star-2" id="var_5_2" type="radio" name="star_5" form="questionnaire">
+							<label class="star star-2" for="var_5_2"></label>
+							<input class="star star-1" id="var_5_1" type="radio" name="star_5" form="questionnaire">
+							<label class="star star-1" for="var_5_1"></label>
+						</div>
+					</div>
+
+				<!-- question_6 -->
+				<div class="question question_6">
+					<h3>Выберете вариант, характеризующий вас.<span>(можно выбрать только один вариант)</span></h3>
+					<ul class="variant-list single_choice">
+						<li class="variant">
+							<input class="var_6" id="var_6_1" name="var_6" type="radio" form="questionnaire">
+							<label class="var_6" for="var_6_1">Я подхожу под описание потенциальной жертвы</label>
+						</li>
+						<li class="variant">
+							<input class="var_6" id="var_6_2" name="var_6" type="radio" form="questionnaire">
+							<label class="var_6" for="var_6_2">Я - жертва</label>
+						</li>
+						<li class="variant">
+							<input class="var_6" id="var_6_3" name="var_6" type="radio" form="questionnaire">
+							<label class="var_6" for="var_6_3">Я не подхожу под описание жертвы</label>
+						</li>
+						<li class="variant">
+							<input class="var_6" id="var_6_4" name="var_6" type="radio" form="questionnaire">
+							<label class="var_6" for="var_6_4">Я из тех, кто не поддается манипуляциям</label>
+						</li>
+					</ul>
+				</div>
+
+				<!-- question_7 -->
+				<div class="question question_7">
+					<h3>Почему вы решили прочитать эту книгу?<span>(можно выбрать несколько вариантов)</span></h3>
+					<ul class="variant-list multiple_choice">
+
+						<li class="variant">
+							<input type="checkbox" class="var_7_1" id="var_7_1" name="var_7_1" form="questionnaire">
+							<label for="var_7_1" class="var_7_1">игнорирование обязательств</label>
+						</li>
+
+						<li class="variant">
+							<input type="checkbox" class="var_7_2" id="var_7_2" name="var_7_2" form="questionnaire">
+							<label for="var_7_2" class="var_7_2">газлайтинг</label>
+						</li>
+
+						<li class="variant">
+							<input type="checkbox" class="var_7_3" id="var_7_3" name="var_7_3" form="questionnaire">
+							<label for="var_7_3" class="var_7_3">висхолдинг</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_4" id="var_7_4" name="var_7_4" form="questionnaire">
+							<label for="var_7_4" class="var_7_4">изоляция от окружения</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_5" id="var_7_5" name="var_7_5" form="questionnaire">
+							<label for="var_7_5" class="var_7_5">пассивная агрессия</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_6" id="var_7_6" name="var_7_6" form="questionnaire">
+							<label for="var_7_6" class="var_7_6">эгоизм и равнодушие</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_7" id="var_7_7" name="var_7_7" form="questionnaire">
+							<label for="var_7_7" class="var_7_7">триггеры</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_8" id="var_7_8" name="var_7_8" form="questionnaire">
+							<label for="var_7_8" class="var_7_8">виктимблейминг</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_9" id="var_7_9" name="var_7_9" form="questionnaire">
+							<label for="var_7_9" class="var_7_9">неспособность идти на уступки</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_10" id="var_7_10" name="var_7_10" form="questionnaire">
+							<label for="var_7_10" class="var_7_10">патологическая ложь</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_11" id="var_7_11" name="var_7_11" form="questionnaire">
+							<label for="var_7_11" class="var_7_11">триангуляция</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_12" id="var_7_12" name="var_7_12" form="questionnaire">
+							<label for="var_7_12" class="var_7_12">дабл байнд</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_13" id="var_7_13" name="var_7_13" form="questionnaire">
+							<label for="var_7_13" class="var_7_13">демонстрация занятости</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_14" id="var_7_14" name="var_7_14" form="questionnaire">
+							<label for="var_7_14" class="var_7_14">демонстрация любви</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_15" id="var_7_15" name="var_7_15" form="questionnaire">
+							<label for="var_7_15" class="var_7_15">положительное подкрепление</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_16" id="var_7_16" name="var_7_16" form="questionnaire">
+							<label for="var_7_16" class="var_7_16">отрицательное подкрепление</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_17" id="var_7_17" name="var_7_17" form="questionnaire">
+							<label for="var_7_17" class="var_7_17">частичное подкрепление</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_18" id="var_7_18" name="var_7_18" form="questionnaire">
+							<label for="var_7_18" class="var_7_18">травмирующий одноразовый опыт</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_19" id="var_7_19" name="var_7_19" form="questionnaire">
+							<label for="var_7_19" class="var_7_19">неряшливость</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_20" id="var_7_20" name="var_7_20" form="questionnaire">
+							<label for="var_7_20" class="var_7_20">патологическое стремление в чистоте</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_21" id="var_7_21" name="var_7_21" form="questionnaire">
+							<label for="var_7_21" class="var_7_21">неглект</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_22" id="var_7_22" name="var_7_22" form="questionnaire">
+							<label for="var_7_22" class="var_7_22">манипуляция изменой</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_23" id="var_7_23" name="var_7_23" form="questionnaire">
+							<label for="var_7_23" class="var_7_23">трио</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_24" id="var_7_24" name="var_7_24" form="questionnaire">
+							<label for="var_7_24" class="var_7_24">перспектицид</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_25" id="var_7_25" name="var_7_25" form="questionnaire">
+							<label for="var_7_25" class="var_7_25">не бросает, не дает уйти, возвращает</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_26" id="var_7_26" name="var_7_26" form="questionnaire">
+							<label for="var_7_26" class="var_7_26">манипуляция разрывом</label>
+						</li>
+						<li class="variant">
+							<input type="checkbox" class="var_7_27" id="var_7_27" name="var_7_27" form="questionnaire">
+							<label for="var_7_27" class="var_7_27">мной никогда не манипулировали</label>
+						</li>
+						<li class="variant another">
+							<label class="var_7_28" for="var_7_28"></label>
+							<textarea class="var_7_28" id="var_7_28" name="var_7_28" >Другой вариант: </textarea>
+						</li>
+					</ul>
+				</div>
+
+				<!-- question_8 -->
+				<div class="question question_8">
+					<h3>Много ли в книге непонятных моментов?<span>(можно выбрать только один вариант)</span></h3>
+					<ul class="variant-list single_choice">
+						<li class="variant">
+							<input class="var_8" id="var_8_1" name="var_8" type="radio" form="questionnaire">
+							<label class="var_8" for="var_8_1">Все понятно</label>
+						</li>
+						<li class="variant">
+							<input class="var_8" id="var_8_2" name="var_8" type="radio" form="questionnaire">
+							<label class="var_8" for="var_8_2">Есть пару непонятных моментов</label>
+						</li>
+						<li class="variant">
+							<input class="var_8" id="var_8_3" name="var_8" type="radio" form="questionnaire">
+							<label class="var_8" for="var_8_3">Очень много непонятного</label>
+						</li>
+						<li class="variant">
+							<input class="var_8" id="var_8_4" name="var_8" type="radio" form="questionnaire">
+							<label class="var_8" for="var_8_4">Не поняла ни слова</label>
+						</li>
+					</ul>
+				</div>
+
+
+					<!-- question_9 -->
+					<div class="question question_9">
+						<h3>Узнали вы что-то новое для себя из этой книги?<span>(оцените от 1 до 10, где 1 - вообще ничего нового не узнала, а 10 - вся информация в книге для меня новая)</span></h3>
+						<div class="stars">
+							<input class="star star-10" id="var_9_10" type="radio" name="star_9" form="questionnaire">
+							<label class="star star-10" for="var_9_10"></label>
+							<input class="star star-9" id="var_9_9" type="radio" name="star_9" form="questionnaire">
+							<label class="star star-9" for="var_9_9"></label>
+							<input class="star star-8" id="var_9_8" type="radio" name="star_9" form="questionnaire">
+							<label class="star star-8" for="var_9_8"></label>
+							<input class="star star-7" id="var_9_7" type="radio" name="star_9" form="questionnaire">
+							<label class="star star-7" for="var_9_7"></label>
+							<input class="star star-6" id="var_9_6" type="radio" name="star_9" form="questionnaire">
+							<label class="star star-6" for="var_9_6"></label>
+							<input class="star star-5" id="var_9_5" type="radio" name="star_9" form="questionnaire">
+							<label class="star star-5" for="var_9_5"></label>
+							<input class="star star-4" id="var_9_4" type="radio" name="star_9" form="questionnaire">
+							<label class="star star-4" for="var_9_4"></label>
+							<input class="star star-3" id="var_9_3" type="radio" name="star_9" form="questionnaire">
+							<label class="star star-3" for="var_9_3"></label>
+							<input class="star star-2" id="var_9_2" type="radio" name="star_9" form="questionnaire">
+							<label class="star star-2" for="var_9_2"></label>
+							<input class="star star-1" id="var_9_1" type="radio" name="star_9" form="questionnaire">
+							<label class="star star-1" for="var_9_1"></label>
+						</div>
+					</div>
 				</form>
 			</div>
-		</div>
-		<script src="https://use.fontawesome.com/decbcc6c6f.js"></script>
-	</body>
-</html>
+			<!-- <div><iframe src="../pdf/requiem-for-love.pdf" frameborder="0"></iframe></div> -->
+			<script src="https://use.fontawesome.com/decbcc6c6f.js"></script>
+		</body>
+	</html>
